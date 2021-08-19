@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+LINK=${1?Error: no link given}
+youtube-dl -o '/Users/sumeet/Documents/music/youtube-dl/%(title)s.%(ext)s' --extract-audio --audio-format mp3 $LINK
